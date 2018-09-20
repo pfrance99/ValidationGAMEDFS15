@@ -1,0 +1,114 @@
+html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6B939F;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .header{
+      animation: 10s openBuzzer;
+      position: relative;
+      top: 0;
+      width: 100%;
+      height: 150px;
+      background-color: #0F414F;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2{
+        color: white;
+        font-size: 5em;
+        font-family: 'Indie Flower', cursive;
+        letter-spacing: 10px;
+        margin: 0;
+      }
+    }
+    .score{
+      margin-top: 50px;
+      margin-bottom: -30px;
+      width: 500px;
+      height: 50px;
+      p{
+        font-family: 'Indie Flower', cursive;
+        font-weight: bold;
+        font-size: 2.1em;
+        margin: 0;
+        text-align: center;
+        color: white;
+      }
+      span{
+        font-weight: bold;
+        font-size: 2.1em;
+        margin: 0;
+        text-align: center;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+      }
+    }
+    .buzzer{
+      display: none;
+      width: 100px;
+      height: 100px;
+      background-color: #AA3939;
+      border-radius: 100%;
+      border: 5px solid white;
+      &:hover{
+        cursor:pointer;
+      }
+    }
+    #content{
+      width: 500px;
+      height: 250px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 50px;
+      .square{
+        width: 200px;
+        height: 200px;
+        background-color: #447684;
+        border-radius: 100%;
+        border: 10px solid white;
+      }
+      .presentation {
+        animation: 10s presentationColors infinite;
+      }
+    }
+    .game-params{
+      width: 500px;
+      height: 150px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .button{
+        width: 200px;
+        height: 50px;
+        font-size: 2em;
+        color: white;
+        background-color: #022A35;
+        border: none;
+        &:hover{
+          cursor: pointer;
+          border: 1px solid white;
+        }
+      }
+    }
+  }
+}
+
+@keyframes presentationColors {
+  0% {background-color: #FF9191;}
+  25% {background-color: #FFEC91;}
+  50% {background-color: #7CDAC7;}
+  75% {background-color: #BC7AC6;}
+  100% {background-color: #FF9191;}
+}

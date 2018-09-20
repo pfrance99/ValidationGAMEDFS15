@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre</title>
+  <link rel="stylesheet/less" href="./styles/style.less">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <!-- <div class="score"></div> -->
+    <h2>REFLEXES</h2>
+  </div>
+
+  <div class="score">
+    <p><span id="score-actual">0</span></p>
+  </div>
+
+  <div id="content">
+    <div id="square1" class="square presentation"></div>
+    <div id="square2" class="square presentation"></div>
+  </div>
+
+  <div class="game-params">
+    <input type="button" id="start-game" class="button" value="Start game">
+    <input type="button" id="stop-game" class="button" value="Stop game">
+  </div>
+
+  <div class="buzzer"></div>
+
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.8.1/less.js"></script>
+</body>
+</html>
